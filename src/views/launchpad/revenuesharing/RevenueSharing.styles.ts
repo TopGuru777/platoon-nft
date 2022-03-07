@@ -102,4 +102,43 @@ export const CardDesc = styled.p`
   }
 `;
 
-export const RevenueChartWrapper = styled.div``;
+export const RevenueChartWrapper = styled.div`
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+`;
+
+export const ChartDesc = styled.div`
+  font-family: poppins-extralight, poppins, sans-serif;
+  font-size: 16px;
+  line-height: 28.8px;
+  p {
+    white-space: nowrap;
+    margin: 0;
+    color: #fff;
+  }
+  h4 {
+    white-space: nowrap;
+    margin: 0;
+    color: #c0ed38;
+  }
+`;
+
+export const ChartImgWrapper = styled.div`
+  margin-left: 30px;
+  max-width: 278px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+`;
+
+export const ChartDescGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  & > *:not(:first-child) {
+    margin-top: 140px;
+  }
+`;

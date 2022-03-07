@@ -7,6 +7,9 @@ import {
   CardDesc,
   CardImgWrapper,
   CardTitle,
+  ChartDesc,
+  ChartDescGroup,
+  ChartImgWrapper,
   RevenueCard,
   RevenueCardGroup,
   RevenueChartWrapper,
@@ -19,6 +22,7 @@ import {
 import img1 from "assets/image/revenue-1.png";
 import img2 from "assets/image/revenue-2.png";
 import img3 from "assets/image/revenue-3.png";
+import chart from "assets/image/chart.svg";
 
 const RevenueSharing: React.FC = () => {
   return (
@@ -34,7 +38,25 @@ const RevenueSharing: React.FC = () => {
             monthly revenue generated will be committed to the $PETE Liquidity
             Pool, thereby adding value to NFT staking earnings.
           </RevenueDesc>
-          <RevenueChartWrapper></RevenueChartWrapper>
+          <RevenueChartWrapper>
+            <ChartDesc>
+              <p>Platoon Bots</p>
+              <h4>37.5%</h4>
+            </ChartDesc>
+            <ChartImgWrapper>
+              <img src={chart.src} alt="chart" />
+            </ChartImgWrapper>
+            <ChartDescGroup>
+              <ChartDesc>
+                <p>Platoon Bots</p>
+                <h4>37.5%</h4>
+              </ChartDesc>
+              <ChartDesc>
+                <p>Platoon Bots</p>
+                <h4>37.5%</h4>
+              </ChartDesc>
+            </ChartDescGroup>
+          </RevenueChartWrapper>
         </RevenueDescPart>
         <RevenueCardGroup>
           <RevenueCard>
