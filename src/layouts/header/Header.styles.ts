@@ -27,6 +27,9 @@ export const MenuWrapper = styled.div`
   & > *:not(:first-child) {
     margin-left: 25px !important;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const MenuItem = styled.p<{ active: boolean }>`
@@ -37,5 +40,44 @@ export const MenuItem = styled.p<{ active: boolean }>`
   color: rgb(${({ active }) => (active ? "186, 218, 85" : "255, 255, 255")});
   :hover {
     color: rgb(186, 218, 85);
+  }
+`;
+
+export const MenuToggle = styled.div`
+  display: none;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const SidebarWrapper = styled.div<{ show: boolean }>`
+  transition: all 0.3s;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  left: -320px;
+  position: fixed;
+  background-color: #000000fa;
+  backdrop-filter: blur(10px);
+  @media screen and (max-width: 768px) {
+    left: ${({ show }) => (show ? 0 : "-320")}px;
+  }
+`;
+
+export const SidebarOverlay = styled.div<{ show: boolean }>`
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  position: fixed;
+  visibility: hidden;
+  background-color: #00000080;
+  @media screen and (max-width: 768px) {
+    opacity: ${({ show }) => (show ? 1 : 0)};
+    visibility: ${({ show }) => (show ? "visible" : "hidden")};
   }
 `;
