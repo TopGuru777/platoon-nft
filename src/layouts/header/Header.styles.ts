@@ -54,6 +54,7 @@ export const MenuToggle = styled.div`
 `;
 
 export const SidebarWrapper = styled.div<{ show: boolean }>`
+  z-index: 999;
   transition: all 0.3s;
   top: 0;
   width: 320px;
@@ -80,4 +81,24 @@ export const SidebarOverlay = styled.div<{ show: boolean }>`
     opacity: ${({ show }) => (show ? 1 : 0)};
     visibility: ${({ show }) => (show ? "visible" : "hidden")};
   }
+`;
+
+export const SidebarContainer = styled.div`
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  padding: 60px 30px;
+
+  svg {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+`;
+
+export const SidebarItem = styled.p<{ active: boolean }>`
+  margin: 0;
+  color: rgb(${({ active }) => (active ? "186, 218, 85" : "255, 255, 255")});
+  margin-bottom: 20px;
 `;

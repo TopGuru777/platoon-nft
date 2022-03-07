@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 
 import Sidebar from "./Sidebar";
 
-const menuData = [
+export const menuData = [
   { path: "/", label: "Home" },
   { path: "/story", label: "Story" },
   { path: "/pete", label: "$PETE" },
