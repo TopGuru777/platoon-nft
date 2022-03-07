@@ -1,10 +1,13 @@
 import React from "react";
 import { NextPage } from "next";
 import Head from "next/head";
-import { LaunchPadLanding } from "views/launchpad";
-import Featured from "views/launchpad/featured/Featured";
-import Pricing from "views/launchpad/pricing/Pricing";
-import RevenueSharing from "views/launchpad/revenuesharing/RevenueSharing";
+import {
+  Community,
+  Featured,
+  LaunchPadLanding,
+  Pricing,
+  RevenueSharing,
+} from "views/launchpad";
 
 const LaunchpadPage: NextPage = () => {
   return (
@@ -16,6 +19,7 @@ const LaunchpadPage: NextPage = () => {
       <LaunchPadLanding />
       <Featured />
       <Pricing />
+      <Community />
       <RevenueSharing />
     </div>
   );
