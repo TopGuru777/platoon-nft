@@ -48,17 +48,6 @@ const FaqCard = (props: any) => {
     }
     setOpen((prev) => !prev);
   }, [props.active]);
-
-  // const handleToggle = (id: number) => {
-  //   const faqElem: any = document.getElementById("faq" + id);
-  //   const faqContentElem: any = document.getElementById("faq-content" + id);
-  //   if (open) {
-  //     faqContentElem.style.height = 0;
-  //   } else {
-  //     faqContentElem.style.height =
-  //       faqElem.getBoundingClientRect().height + "px";
-  //   }
-  // };
   return (
     <FAQCardWrapper>
       <FAQHeader onClick={() => props.onClick(props.id)}>
@@ -78,7 +67,6 @@ const FaqCard = (props: any) => {
         <FAQDesc
           id={"faq" + props.id}
           dangerouslySetInnerHTML={{ __html: props.text }}
-          className="text-[1.2em] text-gray-400 pb-5 -tracking-[1px]"
         />
       </FAQContent>
     </FAQCardWrapper>
