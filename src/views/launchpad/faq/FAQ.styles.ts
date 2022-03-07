@@ -12,6 +12,12 @@ export const FAQTitle = styled.div`
   margin: 0;
   color: #c0ed38;
   font-family: "Permanent Marker", cursive;
+  @media screen and (max-width: 500px) {
+    font-size: 34px;
+  }
+  @media screen and (max-width: 365px) {
+    font-size: 30px;
+  }
 `;
 
 export const FAQCardWrapper = styled.div`
