@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import {
   Community,
+  FAQ,
   Featured,
   LaunchPadLanding,
   Pricing,
@@ -21,6 +22,7 @@ const LaunchpadPage: NextPage = () => {
       <Pricing />
       <Community />
       <RevenueSharing />
+      <FAQ />
     </div>
   );
 };

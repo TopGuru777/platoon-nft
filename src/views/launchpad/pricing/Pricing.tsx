@@ -8,7 +8,7 @@ import {
   PricingTitle,
   PricingWrapper,
   SalesCardGroup,
-  SalesCardWrapper,
+  // SalesCardWrapper,
 } from "./Pricing.styles";
 
 const Pricing: React.FC = () => {
