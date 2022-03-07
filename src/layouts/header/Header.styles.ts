@@ -30,6 +30,7 @@ export const MenuWrapper = styled.div`
 
 export const MenuItem = styled.p<{ active: boolean }>`
   transition: all 0.3s;
+  font-size: 15px;
   cursor: pointer;
   margin: 0;
   color: rgb(${({ active }) => (active ? "186, 218, 85" : "255, 255, 255")});

@@ -34,7 +34,6 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     setSelectedMenu(router.pathname === "/" ? "/" : router.pathname);
-    console.log(router.pathname);
   }, [router.pathname]);
 
   const handleScroll = () => {
