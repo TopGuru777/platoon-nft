@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import { LaunchPadLanding } from "views/launchpad";
 import Featured from "views/launchpad/featured/Featured";
+import Pricing from "views/launchpad/pricing/Pricing";
 
 const LaunchpadPage: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const LaunchpadPage: NextPage = () => {
       </Head>
       <LaunchPadLanding />
       <Featured />
+      <Pricing />
     </div>
   );
 };

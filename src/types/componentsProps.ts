@@ -15,3 +15,11 @@ export interface FeaturedCardProps {
   title?: string;
   desc?: string;
 }
+
+export interface SalesCardProps {
+  title?: string;
+  bgColor?: string;
+  fColor?: string;
+  content?: any;
+  desc?: string;
+}
