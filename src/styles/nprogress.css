@@ -8,8 +8,8 @@
   width: 100%;
   position: fixed;
   z-index: 9999;
-  box-shadow: 0 0 2px rgb(147, 0, 0, 0.8);
-  background-color: rgb(147, 0, 0);
+  box-shadow: 0 0 2px #55555580;
+  background-color: #555;
 }
 #nprogress .peg {
   right: 0;

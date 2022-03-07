@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -30,6 +31,7 @@ export const MenuWrapper = styled.div`
 
 export const MenuItem = styled.p<{ active: boolean }>`
   transition: all 0.3s;
+  font-size: 15px;
   cursor: pointer;
   margin: 0;
   color: rgb(${({ active }) => (active ? "186, 218, 85" : "255, 255, 255")});
