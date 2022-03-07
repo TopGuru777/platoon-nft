@@ -10,31 +10,40 @@ export const SalesCardWrapper = styled.div<SalesCardProps>`
   border-radius: 8px;
   position: relative;
   background-color: ${({ bgColor }) => bgColor};
-  h5 {
+  & > h5 {
     font-family: poppins-extralight, poppins, sans-serif;
     margin: 0;
     font-size: 20px;
     font-weight: 500;
     color: ${({ fColor }) => fColor};
+    margin-bottom: 10px;
   }
-  p {
+  & > p {
     font-family: poppins-extralight, poppins, sans-serif;
     margin: 0;
     font-size: 16px;
     font-weight: 300;
+    margin-top: 10px;
   }
 `;
 
 export const CardContent = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
   contain: content;
+  align-items: center;
+  height: 91px;
+  position: relative;
   .dot-left,
   .dot-right {
+    position: absolute;
     width: 91px;
   }
   .dot-left {
-    margin-left: -35px;
+    left: -10px;
   }
   .dot-right {
-    margin-right: -35px;
+    right: -10px;
   }
 `;

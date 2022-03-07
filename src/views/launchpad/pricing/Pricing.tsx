@@ -4,12 +4,14 @@ import { Button, Container, SalesCard } from "components";
 
 import {
   CardContent,
+  FreeSales,
   PricingDesc,
   PricingTitle,
   PricingWrapper,
   SalesCardGroup,
-  // SalesCardWrapper,
 } from "./Pricing.styles";
+
+import marker from "assets/image/marker.svg";
 
 const Pricing: React.FC = () => {
   const handleClick = () => {
@@ -44,7 +46,12 @@ const Pricing: React.FC = () => {
             bgColor="#ded4ff"
             fColor="#50037f"
             title="Primary Sales"
-            content={<></>}
+            content={
+              <FreeSales>
+                <img src={marker.src} alt="marker" />
+                <span>FREE</span>
+              </FreeSales>
+            }
             desc="of mint revenue + a couple of NFTs"
           />
         </SalesCardGroup>

@@ -33,6 +33,38 @@ export const SalesCardGroup = styled.div`
   grid-gap: 30px;
 `;
 
-export const CardContent = styled.span``;
+export const CardContent = styled.span`
+  font-size: 60px;
+  font-weight: 700;
+  font-family: poppins-extralight, poppins, sans-serif;
+  color: #324158;
+  letter-spacing: 3px;
+`;
 
-export const SalesCardWrapper = styled.div<SalesCardProps>``;
+export const FreeSales = styled.div`
+  height: 91px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    position: absolute;
+    height: 91px;
+    width: 70%;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: poppins-extralight, poppins, sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+`;
