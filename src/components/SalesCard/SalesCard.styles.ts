@@ -26,17 +26,15 @@ export const SalesCardWrapper = styled.div<SalesCardProps>`
 `;
 
 export const CardContent = styled.div`
-  position: relative;
   contain: content;
   .dot-left,
   .dot-right {
-    position: absolute;
     width: 91px;
   }
   .dot-left {
-    left: -15px;
+    margin-left: -35px;
   }
   .dot-right {
-    right: -15px;
+    margin-right: -35px;
   }
 `;
