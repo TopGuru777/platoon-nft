@@ -9,6 +9,7 @@ import {
   CardTitle,
   RevenueCard,
   RevenueCardGroup,
+  RevenueChartWrapper,
   RevenueDesc,
   RevenueDescPart,
   RevenueTitle,
@@ -33,6 +34,7 @@ const RevenueSharing: React.FC = () => {
             monthly revenue generated will be committed to the $PETE Liquidity
             Pool, thereby adding value to NFT staking earnings.
           </RevenueDesc>
+          <RevenueChartWrapper></RevenueChartWrapper>
         </RevenueDescPart>
         <RevenueCardGroup>
           <RevenueCard>

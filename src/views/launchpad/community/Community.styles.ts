@@ -1,8 +1,30 @@
 import styled from "styled-components";
 
 export const CommunityWrapper = styled.div`
+  contain: content;
   background-color: #bada55;
+  position: relative;
   padding: 50px 0;
+  & > img {
+    position: absolute;
+    top: 80px;
+    height: 76px;
+  }
+  .dashed {
+    width: 273px;
+    left: -73px;
+  }
+  .dots {
+    height: 76px;
+  }
+  .dot-group {
+    right: -60px;
+    top: 80px;
+    position: absolute;
+    & > * {
+      margin-right: 10px;
+    }
+  }
 `;
 
 export const CommunityTitle = styled.h2`

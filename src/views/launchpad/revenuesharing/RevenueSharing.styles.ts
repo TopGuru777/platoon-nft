@@ -101,3 +101,5 @@ export const CardDesc = styled.p`
     font-weight: 600;
   }
 `;
+
+export const RevenueChartWrapper = styled.div``;
