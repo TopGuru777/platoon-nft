@@ -14,6 +14,12 @@ export const PricingTitle = styled.h2`
   margin: 0;
   color: #c0ed38;
   font-family: "Permanent Marker", cursive;
+  @media screen and (max-width: 500px) {
+    font-size: 34px;
+  }
+  @media screen and (max-width: 365px) {
+    font-size: 30px;
+  }
 `;
 
 export const PricingDesc = styled.p`
@@ -25,12 +31,19 @@ export const PricingDesc = styled.p`
   font-family: poppins-extralight, poppins, sans-serif;
   margin: auto;
   font-weight: 200;
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 export const SalesCardGroup = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+  @media screen and (max-width: 768px) {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const CardContent = styled.span`

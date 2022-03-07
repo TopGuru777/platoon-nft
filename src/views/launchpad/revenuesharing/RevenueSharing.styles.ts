@@ -5,11 +5,21 @@ export const RevenueWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  transition: all 0.3s;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 100px 0;
+  }
 `;
 
 export const RevenueDescPart = styled.div`
   text-align: left;
+  transition: all 0.3s;
   width: 38%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const RevenueTitle = styled.h2`
@@ -18,6 +28,12 @@ export const RevenueTitle = styled.h2`
   margin: 0;
   color: #c0ed38;
   font-family: "Permanent Marker", cursive;
+  @media screen and (max-width: 500px) {
+    font-size: 34px;
+  }
+  @media screen and (max-width: 365px) {
+    font-size: 30px;
+  }
 `;
 
 export const RevenueDesc = styled.p`
@@ -32,8 +48,13 @@ export const RevenueDesc = styled.p`
 
 export const RevenueCardGroup = styled.div`
   width: 55%;
+  transition: all 0.3s;
   & > *:not(:first-child) {
     margin-top: 25px;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 50px;
+    width: 100%;
   }
 `;
 
@@ -43,6 +64,9 @@ export const RevenueCard = styled.div`
   width: 100%;
   border-radius: 8px;
   display: flex;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const CardImgWrapper = styled.div`
@@ -50,6 +74,7 @@ export const CardImgWrapper = styled.div`
   position: relative;
   width: 133px;
   height: 133px;
+  transition: all 0.2s;
   div {
     position: absolute;
     top: 0;
@@ -65,8 +90,17 @@ export const CardImgWrapper = styled.div`
   }
   img {
     border-radius: 8px;
-
-    :hover {
+  }
+  @media screen and (max-width: 600px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 375px) {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
     }
   }
 `;
@@ -106,6 +140,7 @@ export const RevenueChartWrapper = styled.div`
   display: flex;
   margin-top: 50px;
   align-items: center;
+  justify-content: center;
 `;
 
 export const ChartDesc = styled.div`

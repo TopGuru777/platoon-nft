@@ -25,6 +25,9 @@ export const SalesCardWrapper = styled.div<SalesCardProps>`
     font-weight: 300;
     margin-top: 10px;
   }
+  @media screen and (max-width: 768px) {
+    margin: 30px 0 0;
+  }
 `;
 
 export const CardContent = styled.div`

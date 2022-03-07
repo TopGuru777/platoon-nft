@@ -19,12 +19,7 @@ const Community: React.FC = () => {
       <CommunityTitle>A Community Driven Launchpad</CommunityTitle>
       <CommunityDesc>
         {
-          "From reaching out to collectively vetting applied projects, the Prickly Pete's Platoon"
-        }
-      </CommunityDesc>
-      <CommunityDesc>
-        {
-          "Community is deeply engaged in the Launchpad Mechanics. Each member is rewarded with a Finder's Fee for successfully enrolling a project on to the Platoon Launchpad."
+          "From reaching out to collectively vetting applied projects, the Prickly Pete's Platoon Community is deeply engaged in the Launchpad Mechanics. Each member is rewarded with a Finder's Fee for successfully enrolling a project on to the Platoon Launchpad."
         }
       </CommunityDesc>
       <CommunityButtonWrapper>
