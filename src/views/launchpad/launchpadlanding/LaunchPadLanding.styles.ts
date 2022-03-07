@@ -9,11 +9,11 @@ export const BlackBoard = styled.div`
   background-color: #000;
   width: 25%;
   height: 100%;
-  position: relative;
 `;
 
 export const ImgWrapper = styled.div`
   width: 75%;
+  position: relative;
   height: 100%;
 `;
 
@@ -26,7 +26,7 @@ export const LaunchPadImg = styled.img`
 export const LaunchPadCardWrapper = styled.div`
   background-color: rgb(36, 35, 35);
   position: absolute;
-  left: 50%;
+  left: -200px;
   top: 50%;
   transform: translateY(-50%);
 `;

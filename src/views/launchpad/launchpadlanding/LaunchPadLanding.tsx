@@ -18,9 +18,15 @@ import launchpadImg from "assets/image/launch-img.jpg";
 import launchpadLogo from "assets/image/launch-logo.png";
 
 const LaunchPadLanding: React.FC = () => {
+  const handleClick = () => {
+    window.open("https://airtable.com/shrQTY22nmcj725yh");
+  };
+
   return (
     <LaunchPadWrapper>
-      <BlackBoard>
+      <BlackBoard />
+      <ImgWrapper>
+        <LaunchPadImg src={launchpadImg.src} alt="launchpadImg" />
         <LaunchPadCardWrapper>
           <LaunchPadCard>
             <CardTitle>THE PLATOON LAUNCHPAD</CardTitle>
@@ -35,13 +41,11 @@ const LaunchPadLanding: React.FC = () => {
               fColor="#282626"
               bgColor="#c0Ed38"
               maxW={218}
+              onClick={handleClick}
             />
             <LaunchPadLogo src={launchpadLogo.src} alt="launchpadLogo" />
           </LaunchPadCard>
         </LaunchPadCardWrapper>
-      </BlackBoard>
-      <ImgWrapper>
-        <LaunchPadImg src={launchpadImg.src} alt="launchpadImg" />
       </ImgWrapper>
     </LaunchPadWrapper>
   );

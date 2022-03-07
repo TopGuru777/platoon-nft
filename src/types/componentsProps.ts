@@ -9,3 +9,9 @@ export interface ButtonProps {
   bgColor?: string;
   onClick?: VoidFunction;
 }
+
+export interface FeaturedCardProps {
+  svg?: any;
+  title?: string;
+  desc?: string;
+}
