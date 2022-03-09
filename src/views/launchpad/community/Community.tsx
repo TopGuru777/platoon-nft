@@ -28,6 +28,7 @@ const Community: React.FC = () => {
           label="Apply now"
           fColor="#fff"
           bgColor="#000"
+          border="#000"
           onClick={() => {}}
         />
       </CommunityButtonWrapper>

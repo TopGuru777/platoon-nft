@@ -8,6 +8,4 @@ export const AppWrapper = styled.div`
   background-size: cover;
 `;
 
-export const AppContent = styled.div`
-  padding-top: 71px;
-`;
+export const AppContent = styled.div``;

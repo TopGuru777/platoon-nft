@@ -7,6 +7,8 @@ const Button: React.FC<ButtonProps> = ({
   fColor,
   label,
   maxW,
+  width,
+  border,
   onClick,
 }) => {
   return (
@@ -14,6 +16,8 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       bgColor={bgColor}
       fColor={fColor}
+      width={width}
+      border={border}
       maxW={maxW}
     >
       {label}
