@@ -8,7 +8,6 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   background-color: rgba(47, 46, 46, 0);
   transition: 0.3s all;
-  box-shadow: 0px 0px 30px 0px rgba(20, 20, 22, 0.3);
 `;
 
 export const HeaderContent = styled.div`

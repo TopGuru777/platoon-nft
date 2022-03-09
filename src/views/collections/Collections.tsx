@@ -21,6 +21,14 @@ import nft3_2 from "assets/image/nft-3.gif";
 import nft4 from "assets/image/nft-4.gif";
 
 const Collections: React.FC = () => {
+  const handleMagicEden = (url: string) => {
+    window.open(url);
+  };
+
+  const handleRank = (url: string) => {
+    window.open(url);
+  };
+
   return (
     <CollectionsWrapper>
       <Container maxW={1200}>
@@ -48,6 +56,11 @@ const Collections: React.FC = () => {
               </DescText>
               <ButtonGroup>
                 <Button
+                  onClick={() =>
+                    handleMagicEden(
+                      "https://magiceden.io/marketplace/prickly_petes_platoon_bots"
+                    )
+                  }
                   label="Buy on Magic Eden"
                   bgColor="#c0ed38"
                   border="#c0ed38"
@@ -55,6 +68,11 @@ const Collections: React.FC = () => {
                   width="fit-content"
                 />
                 <Button
+                  onClick={() =>
+                    handleRank(
+                      "https://howrare.is/prickly_petes_platoon_ewcollection"
+                    )
+                  }
                   label="Buy on Magic Eden"
                   bgColor="transparent"
                   fColor="#c0ed38"
@@ -92,6 +110,11 @@ const Collections: React.FC = () => {
               </DescText>
               <ButtonGroup>
                 <Button
+                  onClick={() =>
+                    handleMagicEden(
+                      "https://magiceden.io/marketplace/prickly_petes_platoon_og_cactoon_series"
+                    )
+                  }
                   label="Buy on Magic Eden"
                   bgColor="#c0ed38"
                   border="#c0ed38"
@@ -99,6 +122,11 @@ const Collections: React.FC = () => {
                   width="fit-content"
                 />
                 <Button
+                  onClick={() =>
+                    handleRank(
+                      "https://howrare.is/prickly_petes_platoon_og_cactoon_series"
+                    )
+                  }
                   label="Buy on Magic Eden"
                   bgColor="transparent"
                   fColor="#c0ed38"
@@ -144,6 +172,11 @@ const Collections: React.FC = () => {
               </DescText>
               <ButtonGroup>
                 <Button
+                  onClick={() =>
+                    handleMagicEden(
+                      "https://magiceden.io/marketplace/prickly_petes_platoon"
+                    )
+                  }
                   label="Buy on Magic Eden"
                   bgColor="#c0ed38"
                   border="#c0ed38"
@@ -151,6 +184,11 @@ const Collections: React.FC = () => {
                   width="fit-content"
                 />
                 <Button
+                  onClick={() =>
+                    handleRank(
+                      "https://howrare.is/prickly_petes_platoon_the_platoon_bots"
+                    )
+                  }
                   label="Buy on Magic Eden"
                   bgColor="transparent"
                   fColor="#c0ed38"
@@ -182,17 +220,15 @@ const Collections: React.FC = () => {
               </DescText>
               <ButtonGroup>
                 <Button
+                  onClick={() =>
+                    handleMagicEden(
+                      "https://magiceden.io/marketplace/prickly_petes_platoon_forge_keys"
+                    )
+                  }
                   label="Buy on Magic Eden"
                   bgColor="#c0ed38"
                   border="#c0ed38"
                   fColor="#242323"
-                  width="fit-content"
-                />
-                <Button
-                  label="Buy on Magic Eden"
-                  bgColor="transparent"
-                  fColor="#c0ed38"
-                  border="#c0ed38"
                   width="fit-content"
                 />
               </ButtonGroup>
