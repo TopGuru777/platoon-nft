@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const LaunchPadWrapper = styled.div`
+  padding-top: 71px;
   height: calc(100vh - 71px);
   display: flex;
 `;

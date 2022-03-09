@@ -45,8 +45,10 @@ const Header: React.FC = () => {
     const headerElem: any = document.getElementById("app-header");
     if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
       headerElem.style.backgroundColor = "rgba(47, 46, 46, 1)";
+      headerElem.style.boxShadow = "0px 0px 30px 0px rgba(20, 20, 22, 0.3)";
     } else {
       headerElem.style.backgroundColor = "rgba(47, 46, 46, 0)";
+      headerElem.style.boxShadow = "none";
     }
   };
 
