@@ -2,7 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import Head from "next/head";
 
-import { AboutPete, PeteIntro } from "views/pete";
+import { AboutPete, PeteIntro, Supply, Utilities } from "views/pete";
 
 const PetePage: NextPage = () => {
   return (
@@ -13,6 +13,8 @@ const PetePage: NextPage = () => {
       </Head>
       <PeteIntro />
       <AboutPete />
+      <Supply />
+      <Utilities />
     </div>
   );
 };

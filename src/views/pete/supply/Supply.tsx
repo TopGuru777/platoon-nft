@@ -1,7 +1,8 @@
 import React from "react";
+import { SupplyWrapper } from "./Supply.styles";
 
 const Supply: React.FC = () => {
-  return <div>Supply</div>;
+  return <SupplyWrapper>Supply</SupplyWrapper>;
 };
 
 export default Supply;
