@@ -7,6 +7,8 @@ export interface ButtonProps {
   label?: string;
   fColor?: string;
   bgColor?: string;
+  width?: string;
+  border?: string;
   onClick?: VoidFunction;
 }
 

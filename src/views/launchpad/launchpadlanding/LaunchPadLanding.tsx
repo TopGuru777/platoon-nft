@@ -40,6 +40,7 @@ const LaunchPadLanding: React.FC = () => {
               label="Apply now"
               fColor="#282626"
               bgColor="#c0Ed38"
+              border="#c0Ed38"
               maxW={218}
               onClick={handleClick}
             />
