@@ -9,9 +9,12 @@ import {
   MenuItem,
   MenuToggle,
   MenuWrapper,
+  SocialLink,
 } from "./Header.styles";
 
 import LogoImg from "assets/image/app-logo.png";
+import discordImg from "assets/image/discord.png";
+import twitterImg from "assets/image/twitter.png";
 import { useRouter } from "next/router";
 
 import Sidebar from "./Sidebar";
@@ -73,6 +76,14 @@ const Header: React.FC = () => {
               </MenuItem>
             ))}
           </MenuWrapper>
+          <SocialLink>
+            <a href="https://twitter.com/Pricklyplatoons" target="_blank">
+              <img src={twitterImg.src} alt="twitterImg" />
+            </a>
+            <a href="http://discord.gg/wt3PwDSETz" target="_blank">
+              <img src={discordImg.src} alt="discordImg" />
+            </a>
+          </SocialLink>
           <MenuToggle onClick={() => setShow(true)}>
             <HiMenu />
           </MenuToggle>
