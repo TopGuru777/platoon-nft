@@ -101,3 +101,21 @@ export const SidebarItem = styled.p<{ active: boolean }>`
   color: rgb(${({ active }) => (active ? "186, 218, 85" : "255, 255, 255")});
   margin-bottom: 20px;
 `;
+
+export const SocialLink = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > *:not(:first-child) {
+    margin-left: 20px;
+  }
+  a {
+    display: block;
+  }
+  img {
+    width: 40px;
+    cursor: pointer;
+    margin: 0 5px;
+    height: auto;
+  }
+`;
