@@ -6,6 +6,7 @@ export interface ButtonProps {
   maxW?: number;
   label?: string;
   fColor?: string;
+  fontSize?: number;
   bgColor?: string;
   width?: string;
   border?: string;

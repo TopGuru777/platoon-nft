@@ -5,6 +5,7 @@ import { ButtonWrapper } from "./Button.styles";
 const Button: React.FC<ButtonProps> = ({
   bgColor,
   fColor,
+  fontSize,
   label,
   maxW,
   width,
@@ -16,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       bgColor={bgColor}
       fColor={fColor}
+      fontSize={fontSize}
       width={width}
       border={border}
       maxW={maxW}
