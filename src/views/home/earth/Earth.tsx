@@ -35,18 +35,30 @@ const Earth: React.FC = () => {
         </EarthTextWrapper>
         <EarthImageGroupWrapper>
           <div>
-            <EarthImageWrapper>
+            <EarthImageWrapper
+              data-aos="fade-up"
+              className="aos-init aos-animate"
+            >
               <img src={earthImg1.src} alt="earthImg1" />
             </EarthImageWrapper>
-            <EarthImageWrapper>
+            <EarthImageWrapper
+              data-aos="fade-up"
+              className="aos-init aos-animate"
+            >
               <img src={earthImg3.src} alt="earthImg3" />
             </EarthImageWrapper>
           </div>
           <div>
-            <EarthImageWrapper>
+            <EarthImageWrapper
+              data-aos="fade-up"
+              className="aos-init aos-animate"
+            >
               <img src={earthImg2.src} alt="earthImg2" />
             </EarthImageWrapper>
-            <EarthImageWrapper>
+            <EarthImageWrapper
+              data-aos="fade-up"
+              className="aos-init aos-animate"
+            >
               <img src={earthImg4.src} alt="earthImg4" />
             </EarthImageWrapper>
           </div>
