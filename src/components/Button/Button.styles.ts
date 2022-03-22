@@ -11,7 +11,7 @@ export const ButtonWrapper = styled.div<ButtonProps>`
   transition: all 0.3s;
   font-weight: 700;
   border: 2px solid ${({ border }) => border};
-  font-size: 18px;
+  font-size: ${({ fontSize }) => (fontSize ? fontSize : 18)}px;
   line-height: 25.2px;
   color: ${({ fColor }) => fColor};
   max-width: ${({ maxW }) => maxW}px;
