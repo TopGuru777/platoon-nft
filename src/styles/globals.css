@@ -15,3 +15,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.iiz__hint {
+  display: none !important;
+}
