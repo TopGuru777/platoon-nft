@@ -10,7 +10,6 @@ export const EarthWrapper = styled.div`
 export const EarthTextWrapper = styled.div`
   width: 40%;
   padding: 30px 6%;
-  border-right: 1px solid #333;
   h1,
   p {
     margin: 0;
@@ -31,6 +30,7 @@ export const EarthTextWrapper = styled.div`
 `;
 
 export const EarthImageGroupWrapper = styled.div`
+  border-left: 1px solid #333;
   & > :first-child {
     transform: translateY(-15%);
   }
