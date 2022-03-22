@@ -20,7 +20,7 @@ import slider10 from "assets/image/meet10.png";
 
 const MeetPlatoon: React.FC = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     centerMode: true,
     infinite: true,
     // slidesToShow: 3.7,
@@ -68,18 +68,35 @@ const MeetPlatoon: React.FC = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.3,
           slidesToScroll: 2,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 0.7,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 0.6,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
     ],

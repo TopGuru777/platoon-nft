@@ -5,11 +5,19 @@ export const EarthWrapper = styled.div`
   margin: 200px 0;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    margin: 100px 0;
+    flex-direction: column;
+  }
 `;
 
 export const EarthTextWrapper = styled.div`
   width: 40%;
   padding: 30px 6%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+  }
   h1,
   p {
     margin: 0;
@@ -41,6 +49,20 @@ export const EarthImageGroupWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    border-left: none;
+    border-top: 1px solid #333;
+    width: 100%;
+    & > :first-child {
+      transform: translateY(0%);
+    }
+    & > :last-child {
+      transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const EarthImageWrapper = styled.div`
