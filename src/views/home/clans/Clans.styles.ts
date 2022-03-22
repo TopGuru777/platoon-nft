@@ -20,12 +20,25 @@ export const ClansCardWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   min-width: 331px;
   max-width: 331px;
   width: 100%;
+  @media screen and (max-width: 1024px) {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 500px) {
+    min-width: 230px;
+    max-width: 230px;
+  }
+
   img {
     width: 100%;
     border-radius: 9999px;
@@ -36,6 +49,11 @@ export const ImageWrapper = styled.div`
 export const TextWrapper = styled.div`
   width: 60%;
   font-family: poppins-semibold, poppins, sans-serif;
+  @media screen and (max-width: 1024px) {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
   h2,
   h3,
   p {

@@ -19,3 +19,7 @@ a {
 .iiz__hint {
   display: none !important;
 }
+
+.slick-slide {
+  /* margin: 0 10px; */
+}
