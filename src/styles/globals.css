@@ -15,3 +15,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.iiz__hint {
+  display: none !important;
+}
+
+.slick-slide {
+  /* margin: 0 10px; */
+}

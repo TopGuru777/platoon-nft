@@ -23,12 +23,66 @@ const MeetPlatoon: React.FC = () => {
     dots: true,
     centerMode: true,
     infinite: true,
-    slidesToShow: 3.7,
-    slidesToScroll: 3,
+    // slidesToShow: 3.7,
+    // slidesToScroll: 3,
     autoplay: true,
     speed: 2500,
     autoplaySpeed: 2500,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 6000,
+        settings: {
+          slidesToShow: 3.7,
+          slidesToScroll: 3,
+          // infinite: true,
+          // dots: true,
+        },
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 1240,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1.6,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <Container maxW={1500}>
