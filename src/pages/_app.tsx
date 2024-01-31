@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 
 import AppLayout from "layouts/AppLayout";
 import { useEffect } from "react";
+import { MyMark } from "components/MyMark";
 
 function MyApp({ Component, pageProps }: AppProps) {
   Router.events.on("routeChangeStart", () => {
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AppLayout>
       <Component {...pageProps} />
+      <MyMark />
     </AppLayout>
   );
 }
